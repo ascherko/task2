@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="m-0 p-2">
+        <div class="row p-0 m-0" style="height: 10vh; overflow: hidden">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12 fs-5 text-center mb-1">Паралелепіпед</div>
+                    <div class="col-md-1">A:</div>
+                    <div class="col-md-3"><input type="text" size="10px" id="paralelepipedA" value="20"></div>
+                    <div class="col-md-1">B:</div>
+                    <div class="col-md-3"><input type="text" size="10px" id="paralelepipedB" value="35"></div>
+                    <div class="col-md-1">Кут:</div>
+                    <div class="col-md-3"><input type="text" size="10px" id="paralelepipedCut" value="19"></div>
+                    <div class="col-md-1">Площа:</div>
+                    <div class="col-md-3"><input type="text" size="10px" id="paralelepipedArea" placeholder="-" disabled>
+                    </div>
+                    <div class="col-md-1">H:</div>
+                    <div class="col-md-3"><input type="text" size="10px" id="paralelepipedH" placeholder="-" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <div class="paralelepiped" id="paralelepiped"></div>
+            </div>
+        </div>
+        <div class="row p-0 m-0" style="height: 10vh; overflow: hidden">
+        	 <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <div class="circle" id="circle"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12 fs-5 text-center mb-1">Коло</div>
+                    <div class="col-md-1">Радіус:</div>
+                    <div class="col-md-11"><input type="text" id="circleRadius" value="15"></div>
+                    <div class="col-md-1">Площа:</div>
+                    <div class="col-md-5"><input type="text" id="circleArea" placeholder="-" disabled></div>
+                    <div class="col-md-1">Довжина:</div>
+                    <div class="col-md-5"><input type="text" id="circleL" placeholder="-" disabled></div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0" style="height: 10vh; overflow: hidden">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12 fs-5 text-center mb-1">Еліпс</div>
+                    <div class="col-md-2">Гор. R:</div>
+                    <div class="col-md-4"><input type="text" id="ellipseHR" value="25"></div>
+                    <div class="col-md-2">Верт. R:</div>
+                    <div class="col-md-4"><input type="text" id="ellipseVR" value="15"></div>
+                    <div class="col-md-2">Площа:</div>
+                    <div class="col-md-4"><input type="text" id="ellipseArea" placeholder="-" disabled></div>
+                    <div class="col-md-2">L(набл.):</div>
+                    <div class="col-md-4"><input type="text" id="ellipseL" placeholder="-" disabled></div>
+                </div>
+            </div>
+             <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <div class="ellipse" id="ellipse"></div>
+            </div>
+        </div>
+        <div class="row p-0 m-0" style="height: 10vh; overflow: hidden">
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <div class="square" id="square"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12 text-center fs-5 mb-1">Квадрат</div>
+                    <div class="col-md-2">A:</div>
+                    <div class="col-md-10"><input type="text" id="squareA" value="35"></div>
+                    <div class="col-md-2">Діагональ:</div>
+                    <div class="col-md-4"><input type="text" id="squareD" placeholder="-" disabled></div>
+                    <div class="col-md-2">Площа:</div>
+                    <div class="col-md-4"><input type="text" id="squareArea" placeholder="-" disabled></div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 m-0" style="height: 10vh; overflow: hidden">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12 fs-5 text-center mb-1">Прямокутник</div>
+                    <div class="col-md-2">A:</div>
+                    <div class="col-md-4"><input type="text" id="rectangleA" value="25"></div>
+                    <div class="col-md-2">B:</div>
+                    <div class="col-md-4"><input type="text" id="rectangleB" value="30"></div>
+                    <div class="col-md-2">Діагональ:</div>
+                    <div class="col-md-4"><input type="text" id="rectangleD" placeholder="-" disabled></div>
+                    <div class="col-md-2">Площа:</div>
+                    <div class="col-md-4"><input type="text" id="rectangleArea" placeholder="-" disabled></div>
+                </div>
+            </div>
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <div class="rectangle" id="rectangle"></div>
+            </div>
+        </div>
+        <div class="row p-0 m-0" style="height: 15vh; overflow: hidden">
+            <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <div class="right_triangle" id="right_triangle"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12 fs-5 text-center mb-1">Прямокутний трикутник</div>
+                    <div class="col-md-1">A:</div>
+                    <div class="col-md-3"><input type="text" size="10px" id="rightTriangleA" value="32"></div>
+                    <div class="col-md-1">B:</div>
+                    <div class="col-md-3"><input type="text" size="10px" id="rightTriangleB" value="21"></div>
+                    <div class="col-md-1">C:</div>
+                    <div class="col-md-3"><input type="text" size="10px" id="rightTriangleC" placeholder="-" disabled>
+                    </div>
+                    <div class="col-md-1">∠А:</div>
+                    <div class="col-md-3"><input type="text" size="10px" id="rightTriangleCutA" placeholder="-"
+                            disabled>
+                    </div>
+                    <div class="col-md-1">∠B:</div>
+                    <div class="col-md-3"><input type="text" size="10px" id="rightTriangleCutB" placeholder="-"
+                            disabled>
+                    </div>
+                    <div class="col-md-1">∠C:</div>
+                    <div class="col-md-3"><input type="text" size="10px" id="rightTriangleCutC" placeholder="-"
+                            disabled>
+                    </div>
+                    <div class="col-md-1">Площа:</div>
+                    <div class="col-md-3"><input type="text" size="10px" id="rightTriangleArea" placeholder="-"
+                            disabled>
+                    </div>
+                    <div class="col-md-1">H:</div>
+                    <div class="col-md-3"><input type="text" size="10px" id="rightTriangleH" placeholder="-" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row col-md-8 d-flex justify-content-center p-0 m-0">
+            <input type='submit' value='Обрахувати' onClick='start()' style="background-color: yellow; font-weight: bold; font-size: 15x;" />
+        </div>
+    </div>
+</body>
+
+</html>

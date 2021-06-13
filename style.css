@@ -1,0 +1,43 @@
+div div div div div {
+    border: 2px solid gray;
+}
+
+span {
+    width: 150px;
+}
+
+.paralelepiped {
+	width: 100px;
+	height: 50px;
+	transform: skew(-20deg);
+    background-color: yellow;
+}
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: yellow;
+}
+.ellipse {
+    height: 50px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: yellow;
+}
+.square {
+	width: 100px;
+	height: 100px;
+	background: yellow;
+}
+.rectangle {
+	width: 100px;
+	height: 50px;
+	background: yellow;
+}
+
+.right_triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid yellow;
+    border-right: 100px solid transparent;
+}
