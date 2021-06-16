@@ -38,6 +38,6 @@ span {
 .right_triangle {
     width: 0;
     height: 0;
-    border-bottom: 100px solid yellow;
+    border-bottom: 100px solid transparent;
     border-right: 100px solid transparent;
 }
