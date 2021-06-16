@@ -80,7 +80,7 @@ function right_triangle() {
     b = document.getElementById("rightTriangleB").value;
     c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
 
-    right_triangle.style.borderBottom = (a * 37.936267) / 10 + "px" + " solid grey";
+    right_triangle.style.borderBottom = (a * 37.936267) / 10 + "px" + " solid yellow";
     right_triangle.style.borderRight = (b * 37.936267) / 10 + "px" + " solid transparent";
 
     document.getElementById("rightTriangleC").value = c.toFixed(3);
